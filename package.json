@@ -1,5 +1,5 @@
 {
-  "name": "inst377-fa2020",
+  "name": "inst377-spring2021",
   "version": "1.0.0",
   "description": "Repository for INST377 Dynamic Web Applications Fall 2020 at UMD",
   "main": "index.js",
@@ -39,6 +39,18 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.22.0",
     "html-validate": "^3.0.0"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npatel26/INST377-SP2021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/npatel26/INST377-SP2021/issues"
+  },
+  "homepage": "https://github.com/npatel26/INST377-SP2021#readme"
 }
