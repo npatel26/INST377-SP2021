@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: 800;
 }
@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color: red;
+  background-color: white;
   padding: 1%;
 }
 
@@ -126,7 +126,7 @@ nav a, nav span {
 }
 
 .aside img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
