@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
   font-weight: 800;
 }
@@ -60,7 +60,7 @@ p, li {
 }
 
 body > * {
-  background-color: white;
+  background-color: green;
   padding: 1%;
 }
 
@@ -72,6 +72,12 @@ body > * {
 h1 {
   flex: 5;
   text-transform: uppercase;
+}
+
+.header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
 }
 
 nav {
