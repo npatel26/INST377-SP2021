@@ -19,7 +19,7 @@
 }
 
 .bird {
-    background-color: yellow;
+    background-color: url('flappybird-pipe.png')
     position: absolute;
     width: 60px;
     height: 45px;
