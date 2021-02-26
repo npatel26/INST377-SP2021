@@ -1,34 +1,32 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded' , () => {
     const bird = document.querySelector('.bird')
     const gameDisplay = document.querySelector('.game-container')
-    const ground = document.querySelector('.ground')
+    const ground = document.querySelector('.ground-moving')
     
     let birdLeft = 220
     let birdBottom = 100
     let gravity = 2
     let isGameOver = false 
-    let gap = 430 px
+    let gap = 430
     
-    function startGame(){
+    function startGame() {
         birdBottom -= gravity
         bird.style.bottom = birdBtoom + 'px'
         bird.style.left = birdLeft + 'px'
     }
-    let gameTimerId=setInterval(startGame,20)
+    let gameTimerId = setInterval(startGame, 20)
 
     function control(e) {
-        if (e.keyCode == 32) {
+        if (e.keyCode === 32) {
             jump()
         }
     }
 
-    function jump()
-        if (birdBottom < 500) 
-        birdBottom += 50
+    function jump() {
+        if (birdBottom < 500) birdBottom += 50
         bird.style.bottom = birdBottom + 'px'
         console.log(birdBottom)
     }
-    
     document.addEventListener('keyup', control)
     
     function generateObstacle() {
@@ -78,9 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(gameTimerId)
         console.log('game over')
         isGameOver = true
-        document.removeEventListener('keyup',control) 
+        document.removeEventListener('keyup', control) 
+        ground.classList.add('ground')
+        ground.classList.remove('ground-moving')
     }
-
-
 
 }) 
