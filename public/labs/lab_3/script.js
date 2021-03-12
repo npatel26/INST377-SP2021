@@ -1,3 +1,5 @@
+const { event } = require("cypress/types/jquery");
+
 /* Put your javascript in here */
 const slideArray = [];
 
@@ -26,3 +28,20 @@ function advanceSliderItem() {
     }
 
     let intervalID = setInterval(advanceSliderItem, 3000);
+
+function clickToChangeBox() {
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+
+    prev.addEventListener('click', (event) => {
+        console.log('clicked prev');
+        
+
+       // const classes = box.classList;
+        //console.log(classes.value);
+        //const newClass = (classes.value == 'main') ? 'second' : 'main';
+        //console.log(newClass);
+        //box.classList = newClass;
+    });
+}
+window.onload = clickToChangeBox;
