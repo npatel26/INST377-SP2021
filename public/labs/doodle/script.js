@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         ((doodlerLeftSpace + 60) >= platform.left) &&
                         (doodlerLeftSpace <= (platform.left + 85)) &&
                         !isJumping
-                        ) {
+                        ){
                             console.log('landed')
                             startPoint = doodlerBottomSpace
                             jump()
