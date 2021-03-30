@@ -1,47 +1,48 @@
-const { event } = require("cypress/types/jquery");
+// const { event } = require("cypress/types/jquery");
 
-/* Put your javascript in here */
-const slideArray = [];
 
-for (let i = 0; i < document.querySelectorAll('.slider div').length; i++) {
-    slideArray.push(document.querySelectorAll('.slider div')[i].dataset.background);
-}
+// /* Put your javascript in here */
+// const slideArray = [];
 
-let currentSlideIndex = -1;
+// for (let i = 0; i < document.querySelectorAll('.slider div').length; i++) {
+//     slideArray.push(document.querySelectorAll('.slider div')[i].dataset.background);
+// }
 
-function advanceSliderItem() {
-    currentSlideIndex++;
+// let currentSlideIndex = -1;
 
-    if (currentSlideIndex >= slideArray.length) {
-        currentSlideIndex = 0;
-    }
+// function advanceSliderItem() {
+//     currentSlideIndex++;
 
-    document.querySelector('.slider').styles.cssText = 'background: url("' + slideArray[currentSlideIndex] + '") no-repeat center center; background-size: cover;';
+//     if (currentSlideIndex >= slideArray.length) {
+//         currentSlideIndex = 0;
+//     }
 
-    const elems = document.getElementsByClassName('caption');
-    for (let i = 0; i < elems.length; i++) {
-        elems[i].style.cssText = 'opacity: 0;';
-    }
+//     document.querySelector('.slider').styles.cssText = 'background: url("' + slideArray[currentSlideIndex] + '") no-repeat center center; background-size: cover;';
 
-    const currentCaption = document.querySelector('.caption-' + (currentSlideIndex));
-        currentCaption.styles.cssText = 'opacity: 1;';
-    }
+//     const elems = document.getElementsByClassName('caption');
+//     for (let i = 0; i < elems.length; i++) {
+//         elems[i].style.cssText = 'opacity: 0;';
+//     }
 
-    let intervalID = setInterval(advanceSliderItem, 3000);
+//     const currentCaption = document.querySelector('.caption-' + (currentSlideIndex));
+//         currentCaption.styles.cssText = 'opacity: 1;';
+//     }
 
-function clickToChangeBox() {
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
+//     let intervalID = setInterval(advanceSliderItem, 3000);
 
-    prev.addEventListener('click', (event) => {
-        console.log('clicked prev');
+// function clickToChangeBox() {
+//     const prev = document.querySelector('.prev');
+//     const next = document.querySelector('.next');
+
+//     prev.addEventListener('click', (event) => {
+//         console.log('clicked prev');
         
 
-       // const classes = box.classList;
-        //console.log(classes.value);
-        //const newClass = (classes.value == 'main') ? 'second' : 'main';
-        //console.log(newClass);
-        //box.classList = newClass;
-    });
-}
-window.onload = clickToChangeBox;
+//        // const classes = box.classList;
+//         //console.log(classes.value);
+//         //const newClass = (classes.value == 'main') ? 'second' : 'main';
+//         //console.log(newClass);
+//         //box.classList = newClass;
+//     });
+// }
+// window.onload = clickToChangeBox;
