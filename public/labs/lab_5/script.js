@@ -1,4 +1,5 @@
-//W7 JS//
+//W7 Lab 5 JS//
+function mapInit () //how to put all this in mapinit function
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
